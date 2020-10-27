@@ -1,0 +1,1275 @@
+{
+  "intents": [
+    {
+      "intent": "Enquiry",
+      "examples": [
+        {
+          "text": "Can you provide me with list of products"
+        },
+        {
+          "text": "Do you have any offers?"
+        },
+        {
+          "text": "I want to look into list of products"
+        },
+        {
+          "text": "What are the offers available ?"
+        },
+        {
+          "text": "What are the special products in product list?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Greetings",
+      "examples": [
+        {
+          "text": "Good Afternoon"
+        },
+        {
+          "text": "Good Evening"
+        },
+        {
+          "text": "Good Morning"
+        },
+        {
+          "text": "Hello"
+        },
+        {
+          "text": "Hi"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Order",
+      "examples": [
+        {
+          "text": "Can you please take the order"
+        },
+        {
+          "text": "I want to place an order"
+        },
+        {
+          "text": "order"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "Email",
+      "values": [
+        {
+          "type": "patterns",
+          "value": "Email",
+          "patterns": [
+            "[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,}"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Enquiry",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Fruits",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "list of products",
+          "synonyms": [
+            "products"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "offers",
+          "synonyms": [
+            "deals ",
+            "discount",
+            "discounts"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Special products",
+          "synonyms": [
+            "Specials"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Vegetables",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Fruits",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Apple",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Banana",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Orange",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Pineapple",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Greetings",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Good Afternoon",
+          "synonyms": [
+            "ga",
+            "good afternoon"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Good Evening",
+          "synonyms": [
+            "gn",
+            "good evening"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Good Morning",
+          "synonyms": [
+            "gm",
+            "good morning"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "items",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Apple",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Banana",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Cabbage",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Moong Dal",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Onion",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Orange",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Pineapple",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Potato",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Spinach",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Tur Dal",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Tur Dal premium Gujarat",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Unpolished Moong Dal",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Unpolished Toor Dal",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Order",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Order",
+          "synonyms": [
+            "buy",
+            "Purchase"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Payment",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Card",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "COD",
+          "synonyms": [
+            "Cash On Delivery  "
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "UPI",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Specials",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Tur Dal premium Gujarat",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Unpolished Moong Dal",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Unpolished Toor Dal",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-number",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Vegetables",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Brinjal",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Cabbage",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Onion",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Potato",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. You can try rephrasing."
+              },
+              {
+                "text": "Can you reword your statement? I'm not understanding."
+              },
+              {
+                "text": "I didn't get your meaning."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_10_1603367760081",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "We accept COD, Card and UPI. What is your mode of payment?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_2_1603368073708",
+      "event_name": "focus",
+      "dialog_node": "handler_10_1603368073718",
+      "previous_sibling": "handler_2_1603368073718"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1603367760081",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1603367808461",
+      "previous_sibling": "node_6_1603368164011"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Can you provide me with items you want. You can check the list of product if you want"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_10_1603367809102",
+      "event_name": "focus",
+      "dialog_node": "handler_2_1603367809146",
+      "previous_sibling": "handler_7_1603367809146"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1603368073708",
+      "context": {
+        "Payment": "@Payment"
+      },
+      "conditions": "@Payment",
+      "event_name": "input",
+      "dialog_node": "handler_2_1603368073718"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_5_1603368017343",
+      "context": {
+        "number": "@sys-number"
+      },
+      "conditions": "@sys-number",
+      "event_name": "input",
+      "dialog_node": "handler_3_1603368017355"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_8_1603784646241",
+      "context": {
+        "number2": "@sys-number"
+      },
+      "conditions": "@sys-number",
+      "event_name": "input",
+      "dialog_node": "handler_3_1603784646245"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "How many  Kg you want?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_5_1603368017343",
+      "event_name": "focus",
+      "dialog_node": "handler_5_1603368017355",
+      "previous_sibling": "handler_3_1603368017355"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_10_1603367809102",
+      "context": {
+        "items": "@items"
+      },
+      "conditions": "@items",
+      "event_name": "input",
+      "dialog_node": "handler_7_1603367809146"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Please provide your mobile number"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_8_1603784646241",
+      "event_name": "focus",
+      "dialog_node": "handler_7_1603784646245",
+      "previous_sibling": "handler_3_1603784646245"
+    },
+    {
+      "type": "standard",
+      "title": "Email",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thank you for giving your Email ID. Your mail id $email is used for further references."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "Welcome",
+      "context": {
+        "email": "@Email.literal"
+      },
+      "conditions": "@Email",
+      "dialog_node": "node_10_1603283851267"
+    },
+    {
+      "type": "frame",
+      "title": "Order",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thank You, Your order of $number Kg $items is placed. Please pay using $Payment. Your receipt is sent to $email."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "#Order && @Order:Order",
+      "digress_in": "returns",
+      "dialog_node": "node_10_1603367760081",
+      "digress_out": "allow_all",
+      "previous_sibling": "node_5_1603175019045",
+      "digress_out_slots": "allow_returning"
+    },
+    {
+      "type": "standard",
+      "title": "Greetings",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Greetings || @Greetings",
+      "dialog_node": "node_2_1602338943531",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "title": "Vegetables",
+      "parent": "node_5_1603175019045",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@Vegetables",
+      "dialog_node": "node_2_1603783945096",
+      "previous_sibling": "node_7_1603783936133"
+    },
+    {
+      "type": "standard",
+      "title": "Enquiry",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Enquiry || @Enquiry",
+      "digress_in": "returns",
+      "dialog_node": "node_5_1603175019045",
+      "digress_out": "allow_all_never_return",
+      "previous_sibling": "node_2_1602338943531"
+    },
+    {
+      "type": "standard",
+      "title": "Specials",
+      "parent": "node_5_1603175019045",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@Specials",
+      "dialog_node": "node_6_1603193272776"
+    },
+    {
+      "type": "standard",
+      "title": "Deleting Contexts",
+      "output": {
+        "deleted": "<?context.remove('items')?><?context.remove('number')?><?context.remove('Payment')?><?context.remove('email')?>",
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1603367760081",
+      "conditions": "true",
+      "dialog_node": "node_6_1603368164011"
+    },
+    {
+      "type": "standard",
+      "title": "Fruits",
+      "parent": "node_5_1603175019045",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@Fruits",
+      "dialog_node": "node_7_1603783936133",
+      "previous_sibling": "node_6_1603193272776"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "We  are having  20% off on Vegetables"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "We are having 10% discount on Fruits "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1603175019045",
+      "conditions": "@Enquiry:offers",
+      "dialog_node": "response_10_1603185988789",
+      "previous_sibling": "response_6_1603175398088"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "It costs Rs. 110/- per Kg"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1603193272776",
+      "conditions": "@Specials:(Unpolished Moong Dal)",
+      "dialog_node": "response_10_1603193625791",
+      "previous_sibling": "response_7_1603193597627"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "It costs Rs. 35/- per Kg "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1603783945096",
+      "conditions": "@Vegetables:Brinjal",
+      "dialog_node": "response_1_1603784453352",
+      "previous_sibling": "response_7_1603784405549"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good evening"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1602338943531",
+      "conditions": "@Greetings:(Good Evening)",
+      "dialog_node": "response_2_1602339786203",
+      "previous_sibling": "response_7_1602339611181"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "It costs Rs. 112/- per Kg"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1603193272776",
+      "conditions": "@Specials:(Tur Dal premium Gujarat)",
+      "dialog_node": "response_2_1603193536413"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Fruits",
+            "options": [
+              {
+                "label": "Apple",
+                "value": {
+                  "input": {
+                    "text": "Apple"
+                  }
+                }
+              },
+              {
+                "label": "Banana",
+                "value": {
+                  "input": {
+                    "text": "Banana"
+                  }
+                }
+              },
+              {
+                "label": "Pineapple",
+                "value": {
+                  "input": {
+                    "text": "Pineapple"
+                  }
+                }
+              },
+              {
+                "label": "Orange",
+                "value": {
+                  "input": {
+                    "text": "Orange"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_5_1603175019045",
+      "conditions": "@Enquiry:Fruits",
+      "dialog_node": "response_2_1603781163279",
+      "previous_sibling": "response_7_1603192219654"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good afternoon"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1602338943531",
+      "conditions": "@Greetings:(Good Afternoon)",
+      "dialog_node": "response_3_1602339816619",
+      "previous_sibling": "response_2_1602339786203"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "It costs Rs. 60/- per Kg"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1603783945096",
+      "conditions": "@Vegetables:Cabbage",
+      "dialog_node": "response_3_1603784372011",
+      "previous_sibling": "response_5_1603784326948"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "It Costs Rs. 60/- Per dozen"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1603783936133",
+      "conditions": "@Fruits:Banana",
+      "dialog_node": "response_4_1603784230250",
+      "previous_sibling": "response_8_1603784212160"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "It costs Rs. 50/- per Kg"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1603783945096",
+      "conditions": "@Vegetables:Onion",
+      "dialog_node": "response_5_1603784326948"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "List of product",
+            "source": "https://1.bp.blogspot.com/-4fHwYGJBng8/XQyYpHdUmMI/AAAAAAAABdY/ODctsfd3argMrMdKh3mlIz2a0TbhiH68QCLcBGAs/s1600/D%2BMart%2BGrocery%2Bproduct%2Bprice%2Blist-1.jpg",
+            "response_type": "image"
+          },
+          {
+            "title": "Fruits",
+            "options": [
+              {
+                "label": "Apple",
+                "value": {
+                  "input": {
+                    "text": "Apple"
+                  }
+                }
+              },
+              {
+                "label": "Pineapple",
+                "value": {
+                  "input": {
+                    "text": "Pineapple"
+                  }
+                }
+              },
+              {
+                "label": "Orange",
+                "value": {
+                  "input": {
+                    "text": "Orange"
+                  }
+                }
+              },
+              {
+                "label": "Banana",
+                "value": {
+                  "input": {
+                    "text": "Banana"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          },
+          {
+            "title": "Vegetables",
+            "options": [
+              {
+                "label": "Brinjal",
+                "value": {
+                  "input": {
+                    "text": "Brinjal"
+                  }
+                }
+              },
+              {
+                "label": "Potato",
+                "value": {
+                  "input": {
+                    "text": "Potato"
+                  }
+                }
+              },
+              {
+                "label": " Cabbage",
+                "value": {
+                  "input": {
+                    "text": "Cabbage"
+                  }
+                }
+              },
+              {
+                "label": "Onion",
+                "value": {
+                  "input": {
+                    "text": "Onion"
+                  }
+                }
+              }
+            ],
+            "description": "",
+            "response_type": "option"
+          },
+          {
+            "title": "Special products ",
+            "options": [
+              {
+                "label": " Unpolished Moong  Dal",
+                "value": {
+                  "input": {
+                    "text": "Unpolished Moong  Dal"
+                  }
+                }
+              },
+              {
+                "label": "Unpolished Toor Dal ",
+                "value": {
+                  "input": {
+                    "text": "Unpolished Toor Dal "
+                  }
+                }
+              },
+              {
+                "label": "Tur Dal premium Gujarat",
+                "value": {
+                  "input": {
+                    "text": "Tur Dal premium Gujarat"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_5_1603175019045",
+      "conditions": "@Enquiry:(list of products)",
+      "dialog_node": "response_6_1603175398088",
+      "previous_sibling": "node_2_1603783945096"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Vegetables",
+            "options": [
+              {
+                "label": "Onion",
+                "value": {
+                  "input": {
+                    "text": "Onion"
+                  }
+                }
+              },
+              {
+                "label": "Brinjal",
+                "value": {
+                  "input": {
+                    "text": "Brinjal"
+                  }
+                }
+              },
+              {
+                "label": "Cabbage",
+                "value": {
+                  "input": {
+                    "text": "Cabbage"
+                  }
+                }
+              },
+              {
+                "label": " Potato",
+                "value": {
+                  "input": {
+                    "text": "Potato"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_5_1603175019045",
+      "conditions": "@Enquiry:Vegetables",
+      "dialog_node": "response_6_1603783772373",
+      "previous_sibling": "response_2_1603781163279"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "It Costs Rs. 80/- Per Kg"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1603783936133",
+      "conditions": "@Fruits:Orange",
+      "dialog_node": "response_6_1603784193215",
+      "previous_sibling": "response_9_1603784056683"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good morning"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1602338943531",
+      "conditions": "@Greetings:(Good Morning)",
+      "dialog_node": "response_7_1602339611181"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Special products",
+            "options": [
+              {
+                "label": "Unpolished Moong Dal",
+                "value": {
+                  "input": {
+                    "text": "Unpolished Moong Dal"
+                  }
+                }
+              },
+              {
+                "label": "Unpolished Toor Dal",
+                "value": {
+                  "input": {
+                    "text": "Unpolished Toor Dal"
+                  }
+                }
+              },
+              {
+                "label": "Tur Dal premium Gujarat",
+                "value": {
+                  "input": {
+                    "text": "Tur Dal premium Gujarat"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_5_1603175019045",
+      "conditions": "@Enquiry:(Special products)",
+      "dialog_node": "response_7_1603192219654",
+      "previous_sibling": "response_10_1603185988789"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "It costs Rs. 115/- per Kg"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1603193272776",
+      "conditions": "@Specials:(Unpolished Toor Dal)",
+      "dialog_node": "response_7_1603193597627",
+      "previous_sibling": "response_2_1603193536413"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "It costs Rs. 40/- per Kg"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1603783945096",
+      "conditions": "@Vegetables:Potato",
+      "dialog_node": "response_7_1603784405549",
+      "previous_sibling": "response_3_1603784372011"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "It Costs Rs. 150/- Per Kg"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1603783936133",
+      "conditions": "@Fruits:Apple",
+      "dialog_node": "response_8_1603784212160",
+      "previous_sibling": "response_6_1603784193215"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hi"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1602338943531",
+      "conditions": "anything_else",
+      "dialog_node": "response_9_1602340033047",
+      "previous_sibling": "response_3_1602339816619"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "It Costs Rs. 60/- Per Kg"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1603783936133",
+      "conditions": "@Fruits:Pineapple",
+      "dialog_node": "response_9_1603784056683"
+    },
+    {
+      "type": "slot",
+      "parent": "node_10_1603367760081",
+      "variable": "$items",
+      "dialog_node": "slot_10_1603367809102",
+      "previous_sibling": "handler_1_1603367808461"
+    },
+    {
+      "type": "slot",
+      "parent": "node_10_1603367760081",
+      "variable": "$Payment",
+      "dialog_node": "slot_2_1603368073708",
+      "previous_sibling": "slot_5_1603368017343"
+    },
+    {
+      "type": "slot",
+      "parent": "node_10_1603367760081",
+      "variable": "$number",
+      "dialog_node": "slot_5_1603368017343",
+      "previous_sibling": "slot_10_1603367809102"
+    },
+    {
+      "type": "slot",
+      "parent": "node_10_1603367760081",
+      "variable": "$number2",
+      "dialog_node": "slot_8_1603784646241",
+      "previous_sibling": "slot_2_1603368073708"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello. I am a  Shop Bot capable of showing list of products, find offers, place orders.  can you please give me your Name and Email- ID."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "My first skill",
+  "language": "en",
+  "description": ""
+}
